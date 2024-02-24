@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <span class="main-body">
+        <img class="moon" src="moon.png" alt="moon" id="moon">
+        <div class="login-page">
+            <div class="content">
+                <h3>Welcome to <span>OMAHTI</span></h3>
+                <div class="content-login">
+                    <label id="email" for="email">Email
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                    </label>
+                    <label id="password" for="password">Password
+                    <input id="password" type="password" placeholder="Enter your password" required>
+                    </label>
+                        <div class="forgot">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="submit">
+                            <button id="next" type="submit">Continue</button>
+                        </div>
+                    <hr>
+                    <p class="tof">
+                        By continuing, you agree to the <span class="priv">Terms of Service</span> and <span class="priv">Privacy Policy</span>.
+                    </p>
+                    <div class="other">
+                        <a href="https://accounts.google.com/">
+                            <div class="other-login">
+                                <img src="google.png" alt="google" id="icon">
+                                <p>Continue with Google</p>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <div class="other-login">
+                                <img src="facebook.png" alt="facebook" id="icon">
+                                <p>Continue with Facebook</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/login">
+                            <div class="other-login">
+                                <img src="twitter.png" alt="twitter" id="icon">
+                                <p>Continue with Twitter</p>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="dont-have">
+                            <a href="#">Don't have account?</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </span>
+
+    <script>
+        let element = document.body;
+        let content = document.getElementById("moon");
+
+        content.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            content.classList.toggle("rotate");
+            if(document.body.classList.contains("dark-theme")){
+                moon.src = "sun.png";
+            }else{
+                moon.src = "moon.png";
+            }
+        }
+    </script>
+
+</body>
+</html>

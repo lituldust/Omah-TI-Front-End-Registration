@@ -1,0 +1,12 @@
+- Penambahan animasi ON HOVER pada beberapa bagian
+	1. Sign In / Sign Up
+	2. Subscribe
+	3. Gallery
+	4. Topics
+	5. Navbar
+- Penambahan DARK MODE (javascript)
+- Penambahan animasi ON CLICK pada icon change dark mode (javascript)
+- Penambahan page SIGN IN/SIGN UP 
+	1. Dark mode (javascript)
+	2. Animasi on hover
+	3. Link ke website sign in (google, facebook, twitter)
